@@ -1,0 +1,40 @@
+# Agentic AI: A Beginner's Handbook
+# Python 3.12 recommended. Install with:
+#   pip install -r requirements.txt
+#
+# These are minimum versions, not hard pins. Agent APIs evolve quickly;
+# after installing, check the documentation linked in each notebook.
+
+# --- Core notebook tooling ---
+jupyterlab>=4.0
+ipykernel>=6.29
+python-dotenv>=1.0
+pydantic>=2.7
+
+# --- Chapters 1 and 2: LangChain, LangGraph, MCP ---
+langchain>=1.0
+langgraph>=1.0
+langchain-core>=0.3
+langchain-ollama>=0.3
+langchain-google-genai>=2.0
+fastmcp>=2.0
+
+# --- Chapter 4: Deep Agents ---
+deepagents
+langchain-openai>=0.3
+langchain-anthropic>=0.3
+
+# --- Chapter 6: LLM evaluation ---
+langsmith>=0.3
+openai>=1.60
+
+# --- Chapter 7: LLM gateway ---
+# The [proxy] extra installs the dependencies needed to run `litellm --config`.
+# If you only want the SDK and Router, you can replace this with `litellm`.
+litellm[proxy]>=1.60
+pyyaml>=6.0
+
+# --- Chapter 3: optional PageIndex SDK ---
+# The chapter is a conceptual walkthrough and does not require an SDK.
+# Confirm the current package name and API before installing.
+# pageindex
